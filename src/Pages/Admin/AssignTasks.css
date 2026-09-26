@@ -1,0 +1,122 @@
+/* ===== AssignTasks.jsx ke liye CSS ===== */
+
+/* Form: Employee select, Task Title input, Description textarea */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+  padding: 4px 0;
+}
+
+.task-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.task-form select,
+.task-form input,
+.task-form textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: #ffffff;
+  color: #111827;
+}
+
+.task-form select {
+  cursor: pointer;
+}
+
+.task-form textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.task-form select:focus,
+.task-form input:focus,
+.task-form textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+/* "Assign Task" submit button */
+.task-form .primary-button {
+  align-self: flex-start;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-form .primary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* "Assigned Tasks" table */
+.table-container td[colspan] {
+  text-align: center;
+  padding: 28px;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.table-container tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Task description shown under title (muted class) */
+.muted {
+  color: #9ca3af;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+/* Status badge: Completed = present, Pending = leave */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge.present {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badge.leave {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* Delete (trash) icon button */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  color: #4b5563;
+}
+
+.icon-button:hover {
+  background: #f3f4f6;
+}
+
+.icon-button.danger {
+  color: #dc2626;
+}
+
+.icon-button.danger:hover {
+  background: #fee2e2;
+}

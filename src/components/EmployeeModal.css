@@ -1,0 +1,87 @@
+/* ===== EmployeeModal.jsx ke liye CSS ===== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 20, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modal h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.modal input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.modal input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.modal input:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.secondary-button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #374151;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.secondary-button:hover {
+  background: #f9fafb;
+}
